@@ -1,0 +1,8 @@
+﻿@model Hand
+
+@foreach(Card c in Model.cards)
+            {
+                @c.suit
+                @c.value
+                <img src="@c.image" />
+            }

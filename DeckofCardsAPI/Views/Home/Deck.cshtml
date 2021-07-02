@@ -1,0 +1,7 @@
+﻿@model Deck
+
+@Html.ActionLink("Make a new hand", "Draw", "Home", new { deckId = Model.deck_id })
+
+@*<a asp-action="Draw" asp-controller="Home" asp-route-id="deckId">Make a new hand</a>*@
+<br />
+<a asp-action="Shuffle" asp-controller="Home">Shuffle</a>
